@@ -168,8 +168,8 @@ namespace InterractiveLearningPlatform
         {
             try
             {
-                string fromEmail = "mahmoudnadim47@gmail.com"; 
-                string fromPassword = "zukbcwajnntseetn"; 
+                string fromEmail = ""; 
+                string fromPassword = ""; 
 
                 MailMessage mail = new MailMessage();
                 mail.From = new MailAddress(fromEmail);
