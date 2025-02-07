@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43E473CB-6976-4A33-ACAA-7067610CEEEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>InterractiveLearningPlatform</RootNamespace>
+    <AssemblyName>InterractiveLearningPlatform</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.2903.40, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2903.40\lib\net462\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.2903.40, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2903.40\lib\net462\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.2903.40, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2903.40\lib\net462\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnnoucmentStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnnoucmentStudent.Designer.cs">
+      <DependentUpon>AnnoucmentStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignmentResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignmentResult.Designer.cs">
+      <DependentUpon>AssignmentResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardPay.Designer.cs">
+      <DependentUpon>CardPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Congratulations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Congratulations.Designer.cs">
+      <DependentUpon>Congratulations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CourseBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseBuy.Designer.cs">
+      <DependentUpon>CourseBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSharpBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSharpBuy.Designer.cs">
+      <DependentUpon>CSharpBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CshrapCourseVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CshrapCourseVideo.Designer.cs">
+      <DependentUpon>CshrapCourseVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CssharpQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CssharpQuiz.Designer.cs">
+      <DependentUpon>CssharpQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbConnection.cs" />
+    <Compile Include="CoursesDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoursesDetails.Designer.cs">
+      <DependentUpon>CoursesDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeveloperDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeveloperDetails.Designer.cs">
+      <DependentUpon>DeveloperDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DsaBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DsaBuy.Designer.cs">
+      <DependentUpon>DsaBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DsaCourseVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DsaCourseVideo.Designer.cs">
+      <DependentUpon>DsaCourseVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DsaQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DsaQuiz.Designer.cs">
+      <DependentUpon>DsaQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollments.Designer.cs">
+      <DependentUpon>Enrollments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPass.Designer.cs">
+      <DependentUpon>ForgetPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorAnnoument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructorAnnoument.Designer.cs">
+      <DependentUpon>InstructorAnnoument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorAssignmentUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructorAssignmentUp.Designer.cs">
+      <DependentUpon>InstructorAssignmentUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorAssignSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructorAssignSub.Designer.cs">
+      <DependentUpon>InstructorAssignSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructorDashboard.Designer.cs">
+      <DependentUpon>InstructorDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructorDetails.Designer.cs">
+      <DependentUpon>InstructorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorStudDet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructorStudDet.Designer.cs">
+      <DependentUpon>InstructorStudDet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorStudInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructorStudInfo.Designer.cs">
+      <DependentUpon>InstructorStudInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorStudPerf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructorStudPerf.Designer.cs">
+      <DependentUpon>InstructorStudPerf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MLBuyPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MLBuyPage.Designer.cs">
+      <DependentUpon>MLBuyPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MLCourseVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MLCourseVideo.Designer.cs">
+      <DependentUpon>MLCourseVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MLQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MLQuiz.Designer.cs">
+      <DependentUpon>MLQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MobilePay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MobilePay.Designer.cs">
+      <DependentUpon>MobilePay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyCouse.Designer.cs">
+      <DependentUpon>MyCouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paydetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paydetails.Designer.cs">
+      <DependentUpon>Paydetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentPage.Designer.cs">
+      <DependentUpon>PaymentPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LearnersDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearnersDetails.Designer.cs">
+      <DependentUpon>LearnersDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SAssUpl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SAssUpl.Designer.cs">
+      <DependentUpon>SAssUpl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebDevBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebDevBuy.Designer.cs">
+      <DependentUpon>WebDevBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebDevCoureVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebDevCoureVideo.Designer.cs">
+      <DependentUpon>WebDevCoureVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebQuiz.Designer.cs">
+      <DependentUpon>WebQuiz.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnnoucmentStudent.resx">
+      <DependentUpon>AnnoucmentStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignmentResult.resx">
+      <DependentUpon>AssignmentResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardPay.resx">
+      <DependentUpon>CardPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Congratulations.resx">
+      <DependentUpon>Congratulations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseBuy.resx">
+      <DependentUpon>CourseBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoursesDetails.resx">
+      <DependentUpon>CoursesDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSharpBuy.resx">
+      <DependentUpon>CSharpBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CshrapCourseVideo.resx">
+      <DependentUpon>CshrapCourseVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CssharpQuiz.resx">
+      <DependentUpon>CssharpQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeveloperDetails.resx">
+      <DependentUpon>DeveloperDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DsaBuy.resx">
+      <DependentUpon>DsaBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DsaCourseVideo.resx">
+      <DependentUpon>DsaCourseVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DsaQuiz.resx">
+      <DependentUpon>DsaQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollments.resx">
+      <DependentUpon>Enrollments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPass.resx">
+      <DependentUpon>ForgetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorAnnoument.resx">
+      <DependentUpon>InstructorAnnoument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorAssignmentUp.resx">
+      <DependentUpon>InstructorAssignmentUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorAssignSub.resx">
+      <DependentUpon>InstructorAssignSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorDashboard.resx">
+      <DependentUpon>InstructorDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorDetails.resx">
+      <DependentUpon>InstructorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorStudDet.resx">
+      <DependentUpon>InstructorStudDet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorStudInfo.resx">
+      <DependentUpon>InstructorStudInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorStudPerf.resx">
+      <DependentUpon>InstructorStudPerf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearnersDetails.resx">
+      <DependentUpon>LearnersDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MLBuyPage.resx">
+      <DependentUpon>MLBuyPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MLCourseVideo.resx">
+      <DependentUpon>MLCourseVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MLQuiz.resx">
+      <DependentUpon>MLQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MobilePay.resx">
+      <DependentUpon>MobilePay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyCouse.resx">
+      <DependentUpon>MyCouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paydetails.resx">
+      <DependentUpon>Paydetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentPage.resx">
+      <DependentUpon>PaymentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAssUpl.resx">
+      <DependentUpon>SAssUpl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebDevBuy.resx">
+      <DependentUpon>WebDevBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebDevCoureVideo.resx">
+      <DependentUpon>WebDevCoureVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebQuiz.resx">
+      <DependentUpon>WebQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laptop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-course.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment-method %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ideas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\webdevhtmlcss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-friend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assignment %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-learning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\learning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-01-29 143224.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bankcardcover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAchineLEarning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataStructure.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Csharpcourese.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\projectlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading-30 122330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school-background-o2wgrgg0za0vovk9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavender-abstract-background-concept-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asssubins8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visa %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cousersecover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Welcome,To our Platform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exam-results.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\announcement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\communication.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assignment %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2903.40\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2903.40\build\Microsoft.Web.WebView2.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.2903.40\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.2903.40\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+</Project>

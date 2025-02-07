@@ -1,0 +1,6 @@
+﻿# Ignore Visual Studio and WebView2 files
+bin/
+obj/
+.vs/
+InterractiveLearningPlatform/bin/
+InterractiveLearningPlatform/obj/
