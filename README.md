@@ -44,12 +44,6 @@ The **Interactive Learning Platform** is a Windows Forms-based **E-Learning** ap
 3. Restore NuGet packages and build the project.
 4. Run the application.
 
-## 📄 Project Documentation
-You can view the full project report or documentation in PDF format here:
-
-👉 [Interactive Learning Platform - Project PDF](https://drive.google.com/file/d/1SghOHW4IsR7OBAIyeiAew-MLa8eHUXJX/view?usp=sharing)
-
-[![View PDF](https://img.shields.io/badge/View_PDF-Documentation-blue)](https://drive.google.com/file/d/1SghOHW4IsR7OBAIyeiAew-MLa8eHUXJX/view?usp=sharing)
 
 ### 📘 PDF Preview
 While GitHub doesn't support embedded PDF viewers directly, you can preview the PDF using the Google Drive preview below:
@@ -60,19 +54,6 @@ While GitHub doesn't support embedded PDF viewers directly, you can preview the 
 [![PDF Preview](https://drive.google.com/thumbnail?id=1SghOHW4IsR7OBAIyeiAew-MLa8eHUXJX)](https://drive.google.com/file/d/1SghOHW4IsR7OBAIyeiAew-MLa8eHUXJX/view?usp=sharing)
 
 </details>
-
-## 🖼️ Project Screenshots PDF
-Check out the visual overview of the app in the following PDF:
-
-👉 [Project Frame Screenshots](https://drive.google.com/file/d/1cS38DFhOL05JwfrXeR9_bVFAHXUFBB4z/view?usp=sharing)
-
-[![Screenshot PDF](https://img.shields.io/badge/View_PDF-Screenshots-orange)](https://drive.google.com/file/d/1cS38DFhOL05JwfrXeR9_bVFAHXUFBB4z/view?usp=sharing)
-
-<details>
-<summary>🖼️ Click to Preview Screenshots</summary>
-
-[![Screenshot PDF Preview](https://drive.google.com/thumbnail?id=1cS38DFhOL05JwfrXeR9_bVFAHXUFBB4z)](https://drive.google.com/file/d/1cS38DFhOL05JwfrXeR9_bVFAHXUFBB4z/view?usp=sharing)
-
 </details>
 
 ## 📌 Contribution
