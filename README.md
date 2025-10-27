@@ -1,6 +1,6 @@
 # 🚀 Interactive Learning Platform
 
-##Team Member:
+## Team Member:
 1.Nadim
 2.Galpa
 3.Urbi
