@@ -1,5 +1,11 @@
 # 🚀 Interactive Learning Platform
 
+##Team Member:
+1.Nadim
+2.Galpa
+3.Urbi
+4.Ramia 
+
 ## 📌 Overview
 The **Interactive Learning Platform** is a Windows Forms-based **E-Learning** application designed to enhance digital education. It provides a seamless, interactive, and engaging learning experience for students, instructors, and administrators.
 
